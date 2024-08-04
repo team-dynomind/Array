@@ -1,3 +1,4 @@
+
 /* Write a program to sort the elements of one dimensional array. Read value of array
 elements through command line argument. */
 import java.util.Scanner;
@@ -10,16 +11,17 @@ class U2P1 {
         int n = scanner.hasNextInt() ? scanner.nextInt() : 0;
         int array[] = new int[n];
 
-        System.out.println("Enter elements of the array: ");
         for (int i = 0; i < array.length; i++) {
+            System.out.print("Enter elements of the array " + i + ": ");
             array[i] = scanner.hasNextInt() ? scanner.nextInt() : 0;
         }
+        scanner.close();
 
         System.out.println("Array elements are: ");
         for (int i = 0; i < array.length; i++) {
             System.out.println("array[" + i + "]= " + array[i]);
         }
-        
+
         System.out.println("Array after sorting: ");
         for (int i = 0; i < array.length; i++) {
             for (int j = i + 1; j < array.length; j++) {
