@@ -7,6 +7,8 @@ class U2P4 {
 
     public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);
+        // TODO Why here static 5? + Please use the proper name of the variable throughout the code
+        // TODO scanner is also not closed
         int a[] = new int[5];
         String string[] = new String[5];
         for (int i = 0; i < a.length; i++) {
